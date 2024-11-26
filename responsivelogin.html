@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>login</title>
+</head>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+     body{
+        
+        background: #1abc9c;
+        overflow: hidden;
+    }
+    .container
+    {
+        max-width: 440px;
+        padding: 0 20px;
+        margin: 170px auto;
+    }
+    .wrapper
+    {
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+    }
+    .wrapper .title
+    {
+      line-height: 90px;
+      background: #16a085;  
+      padding-left: 20px;
+      border-radius: 5px 5px 0 0;
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600px;
+      text-align: center;
+      font-family: sans-serif;
+
+    }
+    .wrapper form{
+      padding: 30px 20px 25px 25px;  
+
+    }
+    .wrapper form .row
+    {
+        height: 45px;
+        margin-bottom: 15px;
+        position: relative;
+        
+    }
+    .wrapper form .row input{
+        height: 100%;
+        width: 100%;
+        padding-left: 60px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        font-size: 16px;
+        font-family: sans-serif;
+        transition:  all 0.3s ease;
+    }
+    form .row input:focus
+    {
+        border-color:#16a085 ;
+        box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+    }
+
+    .wrapper form .row i
+    {
+        position: absolute;
+        width: 47px;
+        height: 100%;
+        color: #fff;
+        font-size: 18px;
+        background: #16a085;
+        border: 1px solid #16a085;
+        border-radius: 5px 0 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper form .pass
+    {
+        margin:-8px 0 20px 0;
+    }
+    .wrapper form .pass a
+    {
+        color: #16a085;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: sans-serif;
+    }
+    .wrapper form .pass a:hover
+    {
+    text-decoration: underline;
+    }
+
+    .wrapper form .button input
+    {
+        padding-left: 0;
+        background: #16a085;
+        border: 1px solid #16a085;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500px;
+        border: 1px solid #16a085;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+    form .button input:hover
+    {
+background: #12876f;
+    }
+    .wrapper form .signup-link 
+    {
+        margin-top:20px;
+        text-align: center;
+    }
+    .wrapper form .signup-link a
+    {
+        color: #16a085;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    form .signup-link a:hover
+    {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Login Form</span></div>
+            <form action="#">
+                <div class="row">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Email or phone" required>
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="Password" placeholder="Password" required> 
+                </div>
+                <div class="pass"><a href="#">Forgot Password?</a></div>
+                <div class="row button">
+                    <input type="submit" value="Login">
+                    
+                </div>
+                <div class="signup-link"style="font-family:sans-serif">Not a member?<a href="#">signup now</a></div> 
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
